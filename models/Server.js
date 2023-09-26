@@ -9,7 +9,8 @@ class Server {
     this.middlewares();
     this.connetionDb();
     this.path={
-        usuarios: '/api/usuarios'
+        usuarios: '/api/usuarios',
+        roles: '/api/roles'
     }
     this.routes()
     }
@@ -21,7 +22,8 @@ class Server {
         this.app.use(express.json())
     }
     routes(){
-        this.app.use(this.path.usuarios,require('../routes/usuarios.routes'))
+        this.app.use(this.path.usuarios,require('../routes/usuarios.routes'));
+        this.app.use(this.path.roles,require('../routes/role.routes'))
     }
     listen(){
         this.app.listen(this.port,()=>{

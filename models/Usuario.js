@@ -21,7 +21,8 @@ const UsuarioSchema = Schema({
       },
       rol: {
         type: String,
-        enum: ['administrador', 'usuarioRegular', 'personalSeguridad'], // Define los roles posibles
+        required: true,
+        //enum: ['administrador', 'usuarioRegular', 'personalSeguridad'], // Define los roles posibles
         default: 'usuarioRegular', // Rol por defecto si no se especifica
       },
       ubicacion: {
