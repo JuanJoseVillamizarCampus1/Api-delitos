@@ -29,7 +29,10 @@ const UsuarioSchema = Schema({
           latitud: Number,
           longitud: Number,
         },
-      }
+      },  estado :{
+        type:Boolean,
+        default: true
+    }
 })
 const Usuario = model('Usuario',UsuarioSchema);
 

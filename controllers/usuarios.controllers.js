@@ -1,4 +1,5 @@
 const Usuario = require('../models/Usuario')
+//Post usuarios new usuarios
 const postUsuario = async (req,res)=>{
     try {
         const {nombre,apellido,correoElectronico,contraseña}= req.body
@@ -16,12 +17,26 @@ const postUsuario = async (req,res)=>{
         res.status(500).json({ msg: 'Todos los datos son obligatorios' });
     }
 }
+//Traer todos los usuarios
 const getUsuarios = async (req,res)=>{
     try {
-        const usuarios= await Usuario.find();
+        const usuarios= await Usuario.find({estado:true});
         res.status(200).json(usuarios);
     } catch (error) {
         res.status(500).json({ msg: 'Error al obtener usuarios' });
     }
 }
-module.exports= {postUsuario,getUsuarios}
+//Delete usuarios
+const deleteUsuarios = async (req, res)=>{
+    //extrayendo id de la url de la req
+    const {id} = req.params
+
+    //borrado fisico en DB
+   /*  const usuario = await Usuario.findByIdAndDelete(id); */
+
+    // borrado virtual.  solo se cambia el estado a false del usuario asociado al id en cuestion
+    const usuario = await Usuario.findByIdAndUpdate( id, { estado: false } );
+
+    res.json(usuario)
+}
+module.exports= {postUsuario,getUsuarios,deleteUsuarios}
