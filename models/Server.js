@@ -8,6 +8,10 @@ class Server {
     this.port = process.env.PORT
     this.middlewares();
     this.connetionDb();
+    this.path={
+        usuarios: '/api/usuarios'
+    }
+    this.routes()
     }
     async connetionDb (){
         await dbConnection()
@@ -15,6 +19,9 @@ class Server {
     middlewares(){
         this.app.use(cors())
         this.app.use(express.json())
+    }
+    routes(){
+        this.app.use(this.path.usuarios,require('../routes/usuarios.routes'))
     }
     listen(){
         this.app.listen(this.port,()=>{
