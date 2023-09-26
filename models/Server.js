@@ -10,7 +10,8 @@ class Server {
     this.connetionDb();
     this.path={
         usuarios: '/api/usuarios',
-        roles: '/api/roles'
+        roles: '/api/roles',
+        delitos:'/api/delitos'
     }
     this.routes()
     }

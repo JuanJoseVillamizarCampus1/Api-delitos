@@ -1,11 +1,11 @@
 Título de la API: API de Rastreo de Delitos en Colombia
 
 Descripción:
-La API de Rastreo de Delitos en Colombia es una plataforma tecnológica diseñada para proporcionar acceso a información detallada y actualizada sobre delitos reportados en todo el territorio colombiano. Esta API tiene como objetivo mejorar la transparencia, la seguridad y la colaboración entre la comunidad, las autoridades y los profesionales de la seguridad pública.
+La API de Rastreo de Delitos en Bucaramanga es una plataforma tecnológica diseñada para proporcionar acceso a información detallada y actualizada sobre delitos reportados en todo el territorio Bumangues. Esta API tiene como objetivo mejorar la transparencia, la seguridad y la colaboración entre la comunidad, las autoridades y los profesionales de la seguridad pública.
 
 Funcionalidades Principales:
 
-Consulta de Delitos: Obtén información detallada sobre delitos reportados en Colombia, incluyendo el tipo de delito, la fecha, la ubicación geográfica y el estado actual de la investigación.
+Consulta de Delitos: Obtén información detallada sobre delitos reportados en Bucaramnga, incluyendo el tipo de delito, la fecha, la ubicación geográfica y el estado actual de la investigación.
 
 Reporte de Delitos: Permite a los usuarios reportar incidentes delictivos de manera segura y eficiente. Los ciudadanos pueden proporcionar detalles sobre el delito, incluyendo la ubicación exacta y cualquier evidencia disponible.
 
