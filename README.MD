@@ -30,3 +30,16 @@ Mejora en la coordinación y respuesta de las autoridades ante incidentes delict
 Participación activa de la comunidad en la seguridad pública.
 Facilita la identificación de patrones delictivos y la toma de decisiones basadas en datos.
 Esta descripción proporciona una visión general de las capacidades y los objetivos de la API de Rastreo de Delitos en Colombia, lo que ayudará a los usuarios a comprender su utilidad y cómo pueden beneficiarse de ella. Puedes personalizar esta descripción según tus necesidades y audiencia específicas.
+
+
+//post delito
+{
+  "tipoDelito": "Robo a mano armada",
+  "fecha": "2023-09-25T10:00:00Z",
+  "ubicacion": {
+    "latitud": 7.11392,
+    "longitud": -73.1198
+  },
+  "descripcion": "Ocurrió en la Calle 45 entre Carrera 12 y Carrera 13.",
+  "usuarioReporte": "65131258d113d0d672baa518"
+}

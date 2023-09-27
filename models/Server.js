@@ -24,7 +24,8 @@ class Server {
     }
     routes(){
         this.app.use(this.path.usuarios,require('../routes/usuarios.routes'));
-        this.app.use(this.path.roles,require('../routes/role.routes'))
+        this.app.use(this.path.roles,require('../routes/role.routes'));
+        this.app.use(this.path.delitos,require('../routes/delitos.routes'))
     }
     listen(){
         this.app.listen(this.port,()=>{

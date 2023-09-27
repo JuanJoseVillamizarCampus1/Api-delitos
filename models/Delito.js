@@ -11,11 +11,8 @@ const delitoSchema = new mongoose.Schema({
     default: Date.now
   },
   ubicacion: {
-    type: {
-      latitud: Number,
-      longitud: Number,
-    },
-    required: true,
+    latitud: Number,
+    longitud: Number,
   },
   descripcion: {
     type: String,
